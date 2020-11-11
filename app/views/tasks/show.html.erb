@@ -1,0 +1,11 @@
+<h1><%= @task.title %></h1>
+<p>Details: <%= @task.details %></p>
+<% if @task.completed == true %>
+  <i class="fa fa-check-square-o" aria-hidden="true">Completed</i>
+<% else %>
+  <i class="fa fa-square-o" aria-hidden="true">Completed</i>
+<% end %>
+
+<p><%= link_to '📃 Back to List', tasks_path  %></p>
+<p><%= link_to '✏️ Edit', edit_task_path  %></p>
+
